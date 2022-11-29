@@ -67,7 +67,7 @@ public class StudentMainActivity extends AppCompatActivity {
 
                                 if ( flag == 2 )
                                     images.add(R.drawable.yellow);
-                                else if (flag == 0)
+                                else if (flag == 1)
                                     images.add(R.drawable.red);
                                 else
                                     images.add(R.drawable.green);

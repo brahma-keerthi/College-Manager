@@ -12,6 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
+
 // Its the adapter to convert array to recycler view in user ui
 
 public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
@@ -57,7 +58,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Toast.makeText(v.getContext(), "Clicked -> " + getAdapterPosition(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(v.getContext(), title.getText().toString() + " is Clicked...", Toast.LENGTH_SHORT).show();
                 }
             });
         }

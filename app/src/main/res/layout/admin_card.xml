@@ -6,8 +6,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
+        android:layout_height="134dp">
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
@@ -17,15 +16,15 @@
             app:cardElevation="10dp">
 
             <RelativeLayout
-                android:layout_width="371dp"
-                android:layout_height="match_parent"
+                android:layout_width="375dp"
+                android:layout_height="92dp"
                 android:background="@android:color/system_accent1_400"
                 android:padding="10dp">
 
                 <TextView
                     android:id="@+id/name"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="184dp"
+                    android:layout_height="59dp"
                     android:text="Name"
                     android:textColor="@color/black"
                     android:textFontWeight="1000"
@@ -36,7 +35,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="36dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="9dp"
+                    android:text="isOccupied"
                     android:thumbTint="@drawable/thump_switch" />
 
                 <Switch
@@ -44,7 +46,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="139dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="45dp"
+                    android:text="isWorking"
                     android:thumbTint="@drawable/status_switch" />
             </RelativeLayout>
 

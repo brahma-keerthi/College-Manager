@@ -27,7 +27,7 @@ public class AdminMainActivity extends AppCompatActivity {
     Button add, update;
     AlertDialog dialog;
     LinearLayout layout;
-
+    // Hashmap to push into firebase realtime database
     HashMap <String, Object> Slot = new HashMap<>();
     String lab ;
 
@@ -46,7 +46,7 @@ public class AdminMainActivity extends AppCompatActivity {
 
         buildDialog();
 
-        // add button
+        // add button to add new items
         add.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -80,7 +80,7 @@ public class AdminMainActivity extends AppCompatActivity {
         final EditText name = view.findViewById(R.id.nameEdit);
 
         builder.setView(view);
-        builder.setTitle("Enter Slot Name : ")
+        builder.setTitle("Enter Equipment/System/Tool Name : ")
                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -111,19 +111,35 @@ public class AdminMainActivity extends AppCompatActivity {
 
         nameView.setText(name);
 
-        changeOcc.setOnClickListener(new View.OnClickListener() {
+        // changeStatus gives the working
+        changeStatus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if ( changeStatus.isChecked() ){
                     Slot.put(name, 2);
                 }
-                else if ( changeOcc.isChecked() ){
+                else if ( changeOcc.isChecked() )
                     Slot.put(name, 1);
+                else
+                    Slot.put(name, 0);
+                Toast.makeText(AdminMainActivity.this, "Status changed for " + name, Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        changeOcc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if ( !changeStatus.isChecked() ) {
+                    if (changeOcc.isChecked())
+                        Slot.put(name, 1);
+                    else
+                        Slot.put(name, 0);
+
+                    Toast.makeText(AdminMainActivity.this, "Status changed for " + name, Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    Slot.put(name, 0);
+                    Toast.makeText(AdminMainActivity.this, "Can't alter status as " + name + " is not working...", Toast.LENGTH_SHORT).show();
                 }
-                Toast.makeText(AdminMainActivity.this, "Status changed for " + name, Toast.LENGTH_SHORT).show();
             }
         });
 
