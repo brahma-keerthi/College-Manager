@@ -25,62 +25,72 @@
         android:id="@+id/computerLab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="52dp"
+        android:layout_marginBottom="48dp"
         android:background="@drawable/main_button"
         android:onClick="computerLab"
         android:text="Computer Lab"
         app:layout_constraintBottom_toTopOf="@+id/chemistryLab"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/chemistryLab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="52dp"
+        android:layout_marginBottom="48dp"
         android:background="@drawable/main_button"
         android:onClick="chemistryLab"
         android:text="Chemistry Lab"
         app:layout_constraintBottom_toTopOf="@+id/physicsLab"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/physicsLab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="52dp"
+        android:layout_marginBottom="48dp"
         android:background="@drawable/main_button"
         android:onClick="physicsLab"
         android:text="Physics Lab"
         app:layout_constraintBottom_toTopOf="@+id/gymnasium"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/gymnasium"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="52dp"
+        android:layout_marginBottom="48dp"
         android:background="@drawable/main_button"
         android:onClick="gymnasium"
         android:text="Gymnasium"
         app:layout_constraintBottom_toTopOf="@+id/sportsRoom"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/sportsRoom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="96dp"
+        android:layout_marginBottom="48dp"
         android:background="@drawable/main_button"
-        android:onClick="sportsRoom"
-        android:text="Sports Room"
+        android:onClick="machineShop"
+        android:text="Machine Shop"
+        app:layout_constraintBottom_toTopOf="@+id/hardwareLab"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/hardwareLab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/main_button"
+        android:text="Hardware Lab"
+        android:onClick="hardwareLab"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

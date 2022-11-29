@@ -42,9 +42,17 @@ public class StudentSelectActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    // SportsRoom Button
-    public void sportsRoom(View v){
+    // MachineShop Button
+    public void machineShop(View v){
         lab = "4";
+        Intent intent = new Intent(StudentSelectActivity.this, StudentMainActivity.class);
+        intent.putExtra("key", lab);
+        startActivity(intent);
+    }
+
+    // HardwareLab Button
+    public void hardwareLab(View v){
+        lab = "5";
         Intent intent = new Intent(StudentSelectActivity.this, StudentMainActivity.class);
         intent.putExtra("key", lab);
         startActivity(intent);
