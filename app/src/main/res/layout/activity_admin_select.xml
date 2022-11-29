@@ -49,13 +49,12 @@
         android:id="@+id/physicsLab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="48dp"
+        android:layout_marginBottom="44dp"
         android:background="@drawable/main_button"
         android:onClick="physicsLab"
         android:text="Physics Lab"
         app:layout_constraintBottom_toTopOf="@+id/gymnasium"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -74,7 +73,7 @@
         android:id="@+id/sportsRoom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="48dp"
+        android:layout_marginBottom="56dp"
         android:background="@drawable/main_button"
         android:onClick="machineShop"
         android:text="Machine Shop"
@@ -87,12 +86,12 @@
         android:id="@+id/hardwareLab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="76dp"
         android:background="@drawable/main_button"
-        android:text="Hardware Lab"
         android:onClick="hardwareLab"
+        android:text="Hardware Lab"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
